@@ -1,0 +1,20 @@
+version: '3'
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx-html:/usr/share/nginx/html
+    networks:
+      - mynet
+  
+  client:
+    image: alpine:latest
+    command: sh -c "apk add curl && sleep 3600"
+    networks:
+      - mynet
+
+networks:
+  mynet:
+    driver: bridge
