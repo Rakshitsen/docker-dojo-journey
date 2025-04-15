@@ -17,3 +17,9 @@
 | `docker exec -it <container_id> bash` | Access running container terminal |
 | `docker logs <container_id>` | View container logs |
 | `docker build -t <tagname> .` | Build image from Dockerfile |
+
+
+
+Docker Compose Commands
+(Used for multi-container setups using docker-compose.yml)
+CommandDescriptiondocker-compose upStart all services in foregrounddocker-compose up -dStart all services in detached (background) modedocker-compose downStop and remove all services and networksdocker-compose buildBuild images defined in the Compose filedocker-compose psList all running servicesdocker-compose logsShow logs of all servicesdocker-compose exec <service> bashOpen terminal in a running servicedocker-compose restartRestart all servicesdocker-compose stopStop all services without removing themdocker-compose startStart previously stopped services
