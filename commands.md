@@ -22,5 +22,19 @@
 
 Docker compose
 
-Used for multi-container setups using docker-compose.yml)
-CommandDescriptiondocker-compose upStart all services in foregrounddocker-compose up -dStart all services in detached (background) modedocker-compose downStop and remove all services and networksdocker-compose buildBuild images defined in the Compose filedocker-compose psList all running servicesdocker-compose logsShow logs of all servicesdocker-compose exec <service> bashOpen terminal in a running servicedocker-compose restartRestart all servicesdocker-compose stopStop all services without removing themdocker-compose startStart previously stopped services
+# Docker Compose Commands
+
+(Used for multi-container setups using `docker-compose.yml`)
+
+| Command                              | Description                                      |
+|--------------------------------------|--------------------------------------------------|
+| `docker-compose up`                 | Start all services in foreground                |
+| `docker-compose up -d`              | Start all services in detached (background) mode|
+| `docker-compose down`              | Stop and remove all services and networks       |
+| `docker-compose build`             | Build images defined in the Compose file        |
+| `docker-compose ps`                | List all running services                       |
+| `docker-compose logs`              | Show logs of all services                       |
+| `docker-compose exec <service> bash`| Open terminal in a running service              |
+| `docker-compose restart`           | Restart all services                            |
+| `docker-compose stop`              | Stop all services without removing them         |
+| `docker-compose start`             | Start previously stopped services               |
